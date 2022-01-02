@@ -62,6 +62,8 @@ group :development do
   gem 'guard', '~> 2.18'
   #Guard::LiveReload automatically reloads your browser when 'view' files are modified.
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  #Provides the Binding#of_caller method.
+  gem 'binding_of_caller', '~> 1.0'
 
 end
 
