@@ -1,7 +1,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: lautaro
+  username: deploy
   password: 4585
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
@@ -16,5 +16,5 @@ test:
 production:
   <<: *default
   database: twitter-clone_production
-  username: lautaro
+  username: deploy
   password: <%= ENV['PROJECT_DATABASE_PASSWORD'] %>
