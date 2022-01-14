@@ -5,7 +5,11 @@ require 'capistrano-db-tasks'
 #FIXME add your app name here
 set :application, 'twitter-clone'
 #FIXME replace 'git@github.com:YOUR-GIT-REPO-HERE' with your git clone url
+<<<<<<< HEAD
 set :repo_url, 'git://github.com/lautarograc/twitter-clone.git'
+=======
+set :repo_url, 'git@github.com:lautarograc/twitter-clone.git'
+>>>>>>> 6bbcd3410e6b400b7d228f4f1b529d5e0c9639b3
 #FIXME add location on the server here
 set :deploy_to, '/home/deploy/twitter-clone'
 set :branch, ENV['BRANCH'] if ENV['BRANCH']
