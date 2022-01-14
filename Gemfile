@@ -51,7 +51,7 @@ group :development do
   gem 'capistrano-bundler', '~> 2.0', '>= 2.0.1', require: false
   gem 'capistrano-rails', '~> 1.6', '>= 1.6.1', require: false
   gem 'capistrano-rbenv', '~> 2.2'
-  gem 'capistrano-db-tasks', '~> 0.6'
+  gem 'capistrano-db-tasks', '~> 0.6', require: false
   gem 'capistrano-ext', '~> 1.2', '>= 1.2.1'
   #
 
