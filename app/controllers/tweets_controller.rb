@@ -6,10 +6,20 @@ class TweetsController < ApplicationController
   def index
     @tweets = Tweet.all.order("created_at DESC")
     @tweet = Tweet.new
+    @user = current_user
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @posts }
+    end
   end
-
   # GET /tweets/1 or /tweets/1.json
   def show
+    @user = User.find params[:id]
+  end
+
+  respond_to do |format|
+    format.html # index.html.erb
+    format.json { render json: @user }
   end
 
   # GET /tweets/new

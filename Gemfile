@@ -5,8 +5,7 @@ ruby '2.7.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.4'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+gem 'pg', '~> 1.2', '>= 1.2.3'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -47,6 +46,15 @@ group :development, :test do
 end
 
 group :development do
+  # Capistrano bundle
+  gem 'capistrano', '~> 3.16', require: false
+  gem 'capistrano-bundler', '~> 2.0', '>= 2.0.1', require: false
+  gem 'capistrano-rails', '~> 1.6', '>= 1.6.1', require: false
+  gem 'capistrano-rbenv', '~> 2.2'
+  gem 'capistrano-db-tasks', '~> 0.6'
+  gem 'capistrano-ext', '~> 1.2', '>= 1.2.1'
+  #
+
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
   # Display performance information such as SQL time and flame graphs for each request in your browser.
