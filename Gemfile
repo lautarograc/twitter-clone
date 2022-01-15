@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 #A modern CSS framework based on Flexbox
-gem 'bulma-rails', '~> 0.9.2'
+# gem 'bulma-rails', '~> 0.9.2'
 
 #Forms made easy!
 gem 'simple_form', '~> 5.1'
