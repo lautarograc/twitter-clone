@@ -1,10 +1,16 @@
-
 <div class="column is-half">
 	<article class="media box">
 		<figure class="media-left">
+			<% if user_signed_in? %>
 			<p class="image is-64x64">
-				<%= gravatar_image_tag(current_user.email, size: 64) %>
+				<%= gravatar_image_tag(User.email, size: 64) %>
+			<% else %>
+			<figure class="image is-32x32">
+            <img src="https://bulma.io/images/placeholders/64x64.png">
+          </figure>
+			<% end %>
 			
+			<%= %>
 			</p>
 
 		</figure>
