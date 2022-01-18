@@ -34,6 +34,16 @@ gem 'gravatar_image_tag', '~> 1.2'
 #Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
+
+#A generalized Rack framework for multiple-provider authentication.
+gem "omniauth-rails_csrf_protection"
+
+#Strategy for omniauth with github
+gem 'omniauth-github', '~> 2.0'
+
+#Strategy for omniauth with linkedin
+#gem 'omniauth-google-oauth2'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
