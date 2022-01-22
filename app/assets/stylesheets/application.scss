@@ -16,6 +16,7 @@
 
 @import "bulma";
  
+
 .navbar-brand .title {
     color: white;
 }
@@ -31,4 +32,17 @@
 
 .notification:not(:last-child){
     margin-bottom: 0;
+}
+
+
+// add css for oauth login
+
+.session-links{
+    font-size: 20px;
+}
+.omniauth-github{
+    position: relative;
+    left: -30px;
+    font-size: 25px;
+    width: -10px;
 }

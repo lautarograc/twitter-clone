@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   #https://guides.rubyonrails.org/routing.html
 
   root "tweets#index"
-  get '/user' => "welcome#index", :as => :user_root
-
+  resources :users
+  
 end
