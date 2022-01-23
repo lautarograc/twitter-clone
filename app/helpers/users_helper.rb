@@ -1,4 +1,5 @@
-    def user_gravatar(user)
+module UsersHelper 
+  def user_gravatar(user)
       if user_signed_in?
         gravatar_id = Digest::MD5::hexdigest(user.email.downcase)
         gravatar_url = "http://secure.gravatar.com/avatar/#{gravatar_id}"
@@ -6,3 +7,4 @@
       end
     end
   end
+  
