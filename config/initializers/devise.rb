@@ -268,7 +268,9 @@ Devise.setup do |config|
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :delete
 
+
   if Rails.env.development?
+  
   config.omniauth :github, Rails.application.credentials.dig(:github, :github_client_development_id),
   Rails.application.credentials.dig(:github, :github_client_development_secret), scope:'user,public_repo'
   else
