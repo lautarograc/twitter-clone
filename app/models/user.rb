@@ -17,4 +17,5 @@ class User < ApplicationRecord
           end
         end
   has_many :tweets
+  scope :random, -> { order(Arel::Nodes::NamedFunction.new('RANDOM', [])) }
 end

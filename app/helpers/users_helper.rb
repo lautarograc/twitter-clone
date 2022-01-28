@@ -6,5 +6,9 @@ module UsersHelper
         image_tag(gravatar_url, alt: user.name)
       end
     end
+    def get_random_user_id
+    User.ids.sample(3)
+      end
+
   end
   

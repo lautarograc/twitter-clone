@@ -11,8 +11,8 @@
         <div class="media-content">
           <div class="content">
             <p>
-              <strong><%= User.order("RANDOM()").find(User.ids.sample).username %></strong>
-              <small><%= User.order("RANDOM()").find(User.ids.sample).name %></small>
+                <strong><%= User.find(get_random_user_id[1]).name %></strong>
+                <small><%= User.find(get_random_user_id[1]).username %></small>
             </div>
           </div>
         </article>
@@ -27,8 +27,8 @@
           <div class="media-content">
             <div class="content">
               <p>
-                <strong><%= User.order("RANDOM()").find(User.ids.sample).username %></strong>
-                <small><%= User.order("RANDOM()").find(User.ids.sample).name %></small>
+                <strong><%= User.find(get_random_user_id[0]).name %></strong>
+                <small><%= User.find(get_random_user_id[0]).username %></small>
               </div>
             </div>
           </article>
@@ -43,8 +43,8 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <strong><%= User.order("RANDOM()").find(User.ids.sample).username %></strong>
-                  <small><%= User.order("RANDOM()").find(User.ids.sample).name %></small>
+                <strong><%= User.find(get_random_user_id[2]).name %></strong>
+                <small><%= User.find(get_random_user_id[2]).username %></small>
                 </div>
               </div>
             </article>
