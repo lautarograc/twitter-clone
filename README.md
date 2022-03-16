@@ -1,24 +1,14 @@
-# README
+This project is hosted at https://twitter.graciani.ar
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+What you need?
+Ruby '2.7.4'
+Rails 6.1.4
+PostgreSQL
 
-Things you may want to cover:
+After cloning this project, you'll want to bundle the gems. You can use bundle install.
 
-* Ruby version
+Then, please create the database and migrate it. Do a simple rails db:setup to achieve this.
 
-* System dependencies
+Run the server using rails s.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Tests and Docs are work in progress.
